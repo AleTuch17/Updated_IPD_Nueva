@@ -125,7 +125,7 @@ def get_and_load_functions(
     with open(BLACKLIST, 'w') as f: #DON'T KNOW IF THIS WILL WORK, but should check somehow
         for error in bad:
             function, e = error
-            f.write("From "+function.__name__+", error: "+str(e))
+            f.write("From "+function.__name__+", error: "+str(e)+"\n")
 
     print("Removed", len(bad), "functions for bad IO.")
     print("Loaded", len(loaded_functions), " good functions.")
