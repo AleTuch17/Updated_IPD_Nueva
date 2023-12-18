@@ -7,7 +7,7 @@ NOISE = False # whether or not this tournament has noise
 NOISE_LEVEL = 0.1 # percentage noise; only used if NOISE is set to True
 
 #Random round range from 100 - 200
-ROUNDS = 150 # number of rounds each strategy plays against each other strategy
+ROUNDS = randint(100, 200) # number of rounds each strategy plays against each other strategy
 
 NOISE_GAMES_TILL_AVG = 50 # number of games to play until averaging (if noise is true)
 
